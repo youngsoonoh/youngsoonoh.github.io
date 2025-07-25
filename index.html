@@ -3,26 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>나의 첫 GitHub Pages</title>
+    <title>대한공공조달사협회 - 커밍순</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
+        /* 기본 스타일 */
         body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: 'Noto Sans KR', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #e0f2f7; /* 부드러운 하늘색 배경 */
+            color: #2c3e50; /* 진한 글자색 */
             text-align: center;
+            line-height: 1.6;
         }
+
+        /* 컨테이너 스타일 */
+        .container {
+            background-color: #ffffff;
+            padding: 40px 60px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            width: 90%;
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+
+        /* 텍스트 스타일 */
         h1 {
-            color: #0056b3;
+            font-size: 2.8em;
+            color: #0d47a1; /* 진한 파란색 */
+            margin-bottom: 10px;
+            font-weight: 700;
         }
+
+        h2 {
+            font-size: 3.5em; /* 커밍순 강조 */
+            color: #007bb5; /* 더 밝은 파란색 */
+            margin-top: 5px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
         p {
-            font-size: 1.1em;
+            font-size: 1.2em;
+            margin-bottom: 25px;
+            font-weight: 400;
+        }
+
+        .contact-info {
+            margin-top: 30px;
+            font-size: 1em;
+            color: #555;
+        }
+
+        .contact-info a {
+            color: #007bb5;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* 아이콘 스타일 */
+        .icon {
+            font-size: 4em; /* 아이콘 크기 */
+            color: #1976d2; /* 아이콘 색상 */
+            margin-bottom: 20px;
+            display: block; /* 블록 요소로 중앙 정렬 */
+        }
+
+        /* 애니메이션 */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* 반응형 디자인 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+            h1 {
+                font-size: 2.2em;
+            }
+            h2 {
+                font-size: 2.8em;
+            }
+            p {
+                font-size: 1em;
+            }
+            .icon {
+                font-size: 3em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 2.2em;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>안녕하세요, GitHub Pages!</h1>
-    <p>이것은 제가 GitHub Pages로 만든 간단한 한 장짜리 웹페이지입니다.</p>
-    <p>성공적으로 배포되었습니다!</p>
+    <div class="container">
+        <span class="icon">&#9881;</span> <h1>대한공공조달사협회</h1>
+        <h2>COMING SOON</h2>
+        <!-- <p>대한공공조달사협회 웹사이트가 새롭게 찾아올 예정입니다.</p>
+        <div class="contact-info">
+            <p>문의: <a href="mailto:info@kppma.co.kr">info@kppma.co.kr</a></p>
+        </div> -->
+    </div>
 </body>
 </html>
